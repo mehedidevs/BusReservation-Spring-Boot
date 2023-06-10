@@ -6,10 +6,9 @@ import com.mehedi.reservation.Bus.Reservation.services.impl.BusServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController()
 @RequestMapping("/api/bus")
@@ -24,6 +23,15 @@ public class BusController {
         Bus savedbus = busService.adaBus(bus);
 
         return new ResponseModel<Bus>(HttpStatus.OK.value(), "Bus saved", savedbus);
+    }
+
+
+    @GetMapping("/buses")
+    public ResponseModel<List<Bus>> getAllBus() {
+
+        //return ResponseEntity.ok(busService.getAllBus());
+
+        return new ResponseModel<List<Bus>>(HttpStatus.OK.value(), "success", busService.getAllBus());
     }
 
 
