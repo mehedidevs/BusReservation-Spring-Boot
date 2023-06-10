@@ -1,11 +1,8 @@
 package com.mehedi.reservation.Bus.Reservation.services.impl;
 
-import com.mehedi.reservation.Bus.Reservation.entities.Bus;
 import com.mehedi.reservation.Bus.Reservation.entities.BusRoute;
-import com.mehedi.reservation.Bus.Reservation.reos.BusRepository;
 import com.mehedi.reservation.Bus.Reservation.reos.BusRouteRepository;
 import com.mehedi.reservation.Bus.Reservation.services.BusRouteService;
-import com.mehedi.reservation.Bus.Reservation.services.BusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

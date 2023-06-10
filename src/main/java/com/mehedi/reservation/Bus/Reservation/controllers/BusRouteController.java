@@ -2,7 +2,6 @@ package com.mehedi.reservation.Bus.Reservation.controllers;
 
 import com.mehedi.reservation.Bus.Reservation.entities.BusRoute;
 import com.mehedi.reservation.Bus.Reservation.models.ResponseModel;
-import com.mehedi.reservation.Bus.Reservation.services.BusRouteService;
 import com.mehedi.reservation.Bus.Reservation.services.impl.BusRouteServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
